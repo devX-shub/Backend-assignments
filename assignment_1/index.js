@@ -1,11 +1,9 @@
-
 const express = require('express');
 const app = express();
 
 app.use(function ageChecker(req,res,next)
 {
-    console.log(age)
-    if(req.querry.age > 10)
+    if(req.query.age > 10)
     {
         next()
     }
